@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parallel BubbleSort Test Suite" parallel="methods" thread-count="4">
+    <test name="BubbleSort Tests">
+        <groups>
+            <run>
+                <include name="sorting"/>
+                <include name="exceptions"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.example.BubbleSortTestNG"/>
+        </classes>
+    </test>
+</suite>

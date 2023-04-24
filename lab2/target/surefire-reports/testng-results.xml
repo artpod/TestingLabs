@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="18" passed="14" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-23T22:01:10 EEST" name="BubbleSort Test Suite" finished-at="2023-04-23T22:01:10 EEST" duration-ms="83">
+    <groups>
+      <group name="sorting">
+        <method signature="BubbleSortTestNG.testAlreadySortedArray()[pri:0, instance:com.example.BubbleSortTestNG@57175e74]" name="testAlreadySortedArray" class="com.example.BubbleSortTestNG"/>
+        <method signature="BubbleSortTestNG.testBubbleSort([I,[I)[pri:0, instance:com.example.BubbleSortTestNG@57175e74]" name="testBubbleSort" class="com.example.BubbleSortTestNG"/>
+        <method signature="BubbleSortTestNG.testReverseSortedArray()[pri:0, instance:com.example.BubbleSortTestNG@57175e74]" name="testReverseSortedArray" class="com.example.BubbleSortTestNG"/>
+      </group> <!-- sorting -->
+      <group name="exceptions">
+        <method signature="BubbleSortTestNG.testNullArrayThrowsException()[pri:0, instance:com.example.BubbleSortTestNG@2ed0fbae]" name="testNullArrayThrowsException" class="com.example.BubbleSortTestNG"/>
+      </group> <!-- exceptions -->
+    </groups>
+    <test started-at="2023-04-23T22:01:10 EEST" name="Sorting Tests" finished-at="2023-04-23T22:01:10 EEST" duration-ms="28">
+      <class name="com.example.BubbleSortTestNG">
+        <test-method signature="testAlreadySortedArray()[pri:0, instance:com.example.BubbleSortTestNG@57175e74]" started-at="2023-04-23T22:01:10 EEST" name="testAlreadySortedArray" finished-at="2023-04-23T22:01:10 EEST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAlreadySortedArray -->
+        <test-method signature="testBubbleSort([I,[I)[pri:0, instance:com.example.BubbleSortTestNG@57175e74]" started-at="2023-04-23T22:01:10 EEST" name="testBubbleSort" data-provider="sortingDataProvider" finished-at="2023-04-23T22:01:10 EEST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[I@3c22fc4c]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[I@460d0a57]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBubbleSort -->
+        <test-method signature="testBubbleSort([I,[I)[pri:0, instance:com.example.BubbleSortTestNG@57175e74]" started-at="2023-04-23T22:01:10 EEST" name="testBubbleSort" data-provider="sortingDataProvider" finished-at="2023-04-23T22:01:10 EEST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[I@36c88a32]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[I@7880cdf3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBubbleSort -->
+        <test-method signature="testBubbleSort([I,[I)[pri:0, instance:com.example.BubbleSortTestNG@57175e74]" started-at="2023-04-23T22:01:10 EEST" name="testBubbleSort" data-provider="sortingDataProvider" finished-at="2023-04-23T22:01:10 EEST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[I@1c93084c]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[I@6ef888f6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBubbleSort -->
+        <test-method signature="testBubbleSort([I,[I)[pri:0, instance:com.example.BubbleSortTestNG@57175e74]" started-at="2023-04-23T22:01:10 EEST" name="testBubbleSort" data-provider="sortingDataProvider" finished-at="2023-04-23T22:01:10 EEST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[I@7ce3cb8e]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[I@78b66d36]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBubbleSort -->
+        <test-method signature="testReverseSortedArray()[pri:0, instance:com.example.BubbleSortTestNG@57175e74]" started-at="2023-04-23T22:01:10 EEST" name="testReverseSortedArray" finished-at="2023-04-23T22:01:10 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReverseSortedArray -->
+      </class> <!-- com.example.BubbleSortTestNG -->
+    </test> <!-- Sorting Tests -->
+    <test started-at="2023-04-23T22:01:10 EEST" name="Exception Tests" finished-at="2023-04-23T22:01:10 EEST" duration-ms="1">
+      <class name="com.example.BubbleSortTestNG">
+        <test-method signature="testNullArrayThrowsException()[pri:0, instance:com.example.BubbleSortTestNG@2ed0fbae]" started-at="2023-04-23T22:01:10 EEST" name="testNullArrayThrowsException" finished-at="2023-04-23T22:01:10 EEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNullArrayThrowsException -->
+      </class> <!-- com.example.BubbleSortTestNG -->
+    </test> <!-- Exception Tests -->
+  </suite> <!-- BubbleSort Test Suite -->
+  <suite started-at="2023-04-23T22:01:10 EEST" name="Parallel BubbleSort Test Suite" finished-at="2023-04-23T22:01:10 EEST" duration-ms="4">
+    <groups>
+      <group name="sorting">
+        <method signature="BubbleSortTestNG.testAlreadySortedArray()[pri:0, instance:com.example.BubbleSortTestNG@5762806e]" name="testAlreadySortedArray" class="com.example.BubbleSortTestNG"/>
+        <method signature="BubbleSortTestNG.testBubbleSort([I,[I)[pri:0, instance:com.example.BubbleSortTestNG@5762806e]" name="testBubbleSort" class="com.example.BubbleSortTestNG"/>
+        <method signature="BubbleSortTestNG.testReverseSortedArray()[pri:0, instance:com.example.BubbleSortTestNG@5762806e]" name="testReverseSortedArray" class="com.example.BubbleSortTestNG"/>
+      </group> <!-- sorting -->
+      <group name="exceptions">
+        <method signature="BubbleSortTestNG.testNullArrayThrowsException()[pri:0, instance:com.example.BubbleSortTestNG@5762806e]" name="testNullArrayThrowsException" class="com.example.BubbleSortTestNG"/>
+      </group> <!-- exceptions -->
+    </groups>
+    <test started-at="2023-04-23T22:01:10 EEST" name="BubbleSort Tests" finished-at="2023-04-23T22:01:10 EEST" duration-ms="4">
+      <class name="com.example.BubbleSortTestNG">
+        <test-method signature="testBubbleSort([I,[I)[pri:0, instance:com.example.BubbleSortTestNG@5762806e]" started-at="2023-04-23T22:01:10 EEST" name="testBubbleSort" data-provider="sortingDataProvider" finished-at="2023-04-23T22:01:10 EEST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[I@101d47fb]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[I@1422d120]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBubbleSort -->
+        <test-method signature="testBubbleSort([I,[I)[pri:0, instance:com.example.BubbleSortTestNG@5762806e]" started-at="2023-04-23T22:01:10 EEST" name="testBubbleSort" data-provider="sortingDataProvider" finished-at="2023-04-23T22:01:10 EEST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[I@1ae3658e]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[I@60bbdbb6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBubbleSort -->
+        <test-method signature="testAlreadySortedArray()[pri:0, instance:com.example.BubbleSortTestNG@5762806e]" started-at="2023-04-23T22:01:10 EEST" name="testAlreadySortedArray" finished-at="2023-04-23T22:01:10 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAlreadySortedArray -->
+        <test-method signature="testNullArrayThrowsException()[pri:0, instance:com.example.BubbleSortTestNG@5762806e]" started-at="2023-04-23T22:01:10 EEST" name="testNullArrayThrowsException" finished-at="2023-04-23T22:01:10 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNullArrayThrowsException -->
+        <test-method signature="testBubbleSort([I,[I)[pri:0, instance:com.example.BubbleSortTestNG@5762806e]" started-at="2023-04-23T22:01:10 EEST" name="testBubbleSort" data-provider="sortingDataProvider" finished-at="2023-04-23T22:01:10 EEST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[I@7996a14e]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[I@3541ef39]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBubbleSort -->
+        <test-method signature="testBubbleSort([I,[I)[pri:0, instance:com.example.BubbleSortTestNG@5762806e]" started-at="2023-04-23T22:01:10 EEST" name="testBubbleSort" data-provider="sortingDataProvider" finished-at="2023-04-23T22:01:10 EEST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[I@310fb28f]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[I@30c16e35]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBubbleSort -->
+        <test-method signature="testReverseSortedArray()[pri:0, instance:com.example.BubbleSortTestNG@5762806e]" started-at="2023-04-23T22:01:10 EEST" name="testReverseSortedArray" finished-at="2023-04-23T22:01:10 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReverseSortedArray -->
+      </class> <!-- com.example.BubbleSortTestNG -->
+    </test> <!-- BubbleSort Tests -->
+  </suite> <!-- Parallel BubbleSort Test Suite -->
+</testng-results>

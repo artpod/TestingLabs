@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="0.296" tests="14" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="20"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/u/Desktop/testing/lab2/target/test-classes:/Users/u/Desktop/testing/lab2/target/classes:/Users/u/.m2/repository/org/testng/testng/7.4.0/testng-7.4.0.jar:/Users/u/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/Users/u/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="Europe/Kiev"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="20"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="UA"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/20/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/u/Desktop/testing/lab2/target/surefire/surefirebooter8859898004410504720.jar /Users/u/Desktop/testing/lab2/target/surefire 2023-04-23T22-01-10_058-jvmRun1 surefire7281340530346048088tmp surefire_04755372997138189237tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/u/Desktop/testing/lab2/target/test-classes:/Users/u/Desktop/testing/lab2/target/classes:/Users/u/.m2/repository/org/testng/testng/7.4.0/testng-7.4.0.jar:/Users/u/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/Users/u/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/u"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-03-21"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/20/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/u/Desktop/testing/lab2"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/u/Desktop/testing/lab2/target/surefire/surefirebooter8859898004410504720.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="20"/>
+    <property name="user.name" value="u"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="13.2.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/u/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/xh/t1fbcljs2mxg4htj8r91lyyr0000gn/T/"/>
+    <property name="java.version" value="20"/>
+    <property name="user.dir" value="/Users/u/Desktop/testing/lab2"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/u/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="20"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="64.0"/>
+  </properties>
+  <testcase name="testAlreadySortedArray" classname="com.example.BubbleSortTestNG" time="0.003">
+    <system-out><![CDATA[...
+... TestNG 7.4.0 by Cédric Beust (cedric@beust.com)
+...
+
+]]></system-out>
+  </testcase>
+  <testcase name="testAlreadySortedArray" classname="com.example.BubbleSortTestNG" time="0"/>
+  <testcase name="testBubbleSort[[I@3c22fc4c, [I@460d0a57](1)" classname="com.example.BubbleSortTestNG" time="0.003">
+    <system-out><![CDATA[Before sorting:
+3 2 1 
+Sorted:
+1 2 3 
+]]></system-out>
+  </testcase>
+  <testcase name="testBubbleSort[[I@36c88a32, [I@7880cdf3](2)" classname="com.example.BubbleSortTestNG" time="0.001">
+    <system-out><![CDATA[Before sorting:
+
+Sorted:
+
+]]></system-out>
+  </testcase>
+  <testcase name="testBubbleSort[[I@1c93084c, [I@6ef888f6](3)" classname="com.example.BubbleSortTestNG" time="0.001">
+    <system-out><![CDATA[Before sorting:
+5 
+Sorted:
+5 
+]]></system-out>
+  </testcase>
+  <testcase name="testBubbleSort[[I@7ce3cb8e, [I@78b66d36](4)" classname="com.example.BubbleSortTestNG" time="0.003">
+    <system-out><![CDATA[Before sorting:
+4 4 4 4 
+Sorted:
+4 4 4 4 
+]]></system-out>
+  </testcase>
+  <testcase name="testReverseSortedArray" classname="com.example.BubbleSortTestNG" time="0"/>
+  <testcase name="testReverseSortedArray" classname="com.example.BubbleSortTestNG" time="0"/>
+  <testcase name="testNullArrayThrowsException" classname="com.example.BubbleSortTestNG" time="0"/>
+  <testcase name="testNullArrayThrowsException" classname="com.example.BubbleSortTestNG" time="0"/>
+  <testcase name="testBubbleSort[[I@101d47fb, [I@1422d120](1)" classname="com.example.BubbleSortTestNG" time="0.001">
+    <system-out><![CDATA[Before sorting:
+3 2 1 
+Sorted:
+1 2 3 
+]]></system-out>
+  </testcase>
+  <testcase name="testBubbleSort[[I@1ae3658e, [I@60bbdbb6](2)" classname="com.example.BubbleSortTestNG" time="0.001">
+    <system-out><![CDATA[Before sorting:
+
+Sorted:
+
+]]></system-out>
+  </testcase>
+  <testcase name="testBubbleSort[[I@310fb28f, [I@30c16e35](3)" classname="com.example.BubbleSortTestNG" time="0">
+    <system-out><![CDATA[Before sorting:
+5 
+Sorted:
+5 
+]]></system-out>
+  </testcase>
+  <testcase name="testBubbleSort[[I@7996a14e, [I@3541ef39](4)" classname="com.example.BubbleSortTestNG" time="0.001">
+    <system-out><![CDATA[Before sorting:
+4 4 4 4 
+Sorted:
+4 4 4 4 
+]]></system-out>
+  </testcase>
+</testsuite>
