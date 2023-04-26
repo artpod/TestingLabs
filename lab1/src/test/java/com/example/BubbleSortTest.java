@@ -33,14 +33,22 @@ class BubbleSortTest {
     @Test
     void testEmptyArray() {
         int[] array = new int[0];
+        System.out.println("Before sorting:");
+        printArr(array);
         bubbleSort.sort(array);
+        System.out.println("Sorted:");
+        printArr(array);
         assertThat(array).isEmpty();
     }
 
     @Test
     void testOneElementArray() {
         int[] array = new int[]{5};
+        System.out.println("Before sorting:");
+        printArr(array);
         bubbleSort.sort(array);
+        System.out.println("Sorted:");
+        printArr(array);
         assertThat(array).hasSize(1);
         assertThat(array).containsExactly(5);
     }
@@ -48,7 +56,11 @@ class BubbleSortTest {
     @Test
     void testTwoElementArray() {
         int[] array = new int[]{5, 3};
+        System.out.println("Before sorting:");
+        printArr(array);
         bubbleSort.sort(array);
+        System.out.println("Sorted:");
+        printArr(array);
         assertThat(array).hasSize(2);
         assertThat(array).containsExactly(3, 5);
     }
@@ -56,7 +68,11 @@ class BubbleSortTest {
     @Test
     void testMultipleElementsArray() {
         int[] array = new int[]{5, 1, 4, 2, 8};
+        System.out.println("Before sorting:");
+        printArr(array);
         bubbleSort.sort(array);
+        System.out.println("Sorted:");
+        printArr(array);
         assertThat(array).hasSize(5);
         assertThat(array).containsExactly(1, 2, 4, 5, 8);
     }
@@ -81,9 +97,26 @@ class BubbleSortTest {
         int[] array = inputList.stream().mapToInt(Integer::parseInt).toArray();
         int[] expectedArray = expectedList.stream().mapToInt(Integer::parseInt).toArray();
 
+        System.out.println("Before sorting:");
+        printArr(array);
         bubbleSort.sort(array);
+        System.out.println("Sorted:");
+        printArr(array);
 
         assertThat(array).hasSize(expectedArray.length);
         assertThat(array).containsExactly(expectedArray);
+    }
+
+    private static void printArr(int[] arr)
+    {
+        if (arr.length != 0) {
+        for (int i=0; i < arr.length; i++)
+        System.out.print(arr[i]+" ");
+        System.out.println("");
+        }
+        else {
+        System.out.print("[ ]");
+        System.out.println("");
+        }
     }
 }

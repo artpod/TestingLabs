@@ -30,7 +30,11 @@ public class CombinedTest {
     @Test
     public void testNormalSwapping() {
         int[] arr = {3, 2, 1};
+        System.out.println("Before sorting:");
+        printArr(arr);  
         bubbleSort.sort(arr);
+        System.out.println("Sorted:");
+        printArr(arr);
         verify(swapper, times(3)).swap(eq(arr), anyInt(), anyInt());        /// (2) times
     }
 
@@ -38,7 +42,11 @@ public class CombinedTest {
     @Test
     public void testNoSwapping() {
         int[] arr = {1, 2, 3};
+        System.out.println("Before sorting:");
+        printArr(arr);  
         bubbleSort.sort(arr);
+        System.out.println("Sorted:");
+        printArr(arr);
         verify(swapper, never()).swap(eq(arr), anyInt(), anyInt());
     }
 
@@ -57,7 +65,12 @@ public class CombinedTest {
         BubbleSort bubbleSortWithSpy = new BubbleSort(spySwapper);
 
         int[] arr = {3, 2, 1};
+        System.out.println("Before sorting:");
+        printArr(arr);  
         bubbleSortWithSpy.sort(arr);
+        System.out.println("Sorted:");
+        printArr(arr);
+        
 
         verify(spySwapper, times(3)).swap(eq(arr), anyInt(), anyInt());
     }
@@ -67,7 +80,8 @@ public class CombinedTest {
     public void testSwapperThrowsException() {
         int[] arr = {3, 2, 1};
         doThrow(RuntimeException.class).when(swapper).swap(eq(arr), anyInt(), anyInt());
-        bubbleSort.sort(arr);
+
+        bubbleSort.sort(arr);  
     }
 
     // Test 6: Test ArrayProcessor with Mockito
@@ -82,8 +96,12 @@ public class CombinedTest {
         System.arraycopy(sorted, 0, arr, 0, arr.length);
         return null;
     }).when(bubbleSortMock).sort(any(int[].class));
-
+    
+    System.out.println("Before sorting:");
+    printArr(input);    
     int[] result = arrayProcessor.processArray(input.clone());
+    System.out.println("Sorted:");
+    printArr(result);
 
     assertArrayEquals(sorted, result);
 
@@ -103,6 +121,19 @@ public class CombinedTest {
             int temp = arr[i];
             arr[i] = arr[j];
             arr[j] = temp;
+        }
+    }
+
+    private static void printArr(int[] arr)
+    {
+        if (arr.length != 0) {
+        for (int i=0; i < arr.length; i++)
+        System.out.print(arr[i]+" ");
+        System.out.println("");
+        }
+        else {
+        System.out.print("[ ]");
+        System.out.println("");
         }
     }
 }
